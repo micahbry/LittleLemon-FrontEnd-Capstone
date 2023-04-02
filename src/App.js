@@ -1,13 +1,17 @@
 import "./App.css";
-import Navbar from "./components/Navbar.Js";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/NavBar";
 import Routing from "./components/Routing";
 import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
-      <Navbar />
-      <Routing />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routing />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
